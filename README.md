@@ -62,21 +62,21 @@ Calculate Votes:
 ```
     if county_name not in county_options:
 
-        # 4b: Add the existing county to the list of counties.   
+        # Add the existing county to the list of counties.   
         county_options.append(county_name)
 
-        # 4c: Begin tracking the county's vote count.
+        # Begin tracking the county's vote count.
         county_votes[county_name] = 0 
             
-    # 5: Add a vote to that county's vote count.
+    # Add a vote to that county's vote count.
     county_votes[county_name] += 1
 ```
 Total votes and percentages calculated: 
 ```
     for county_name in county_votes:
-    # 6b: Retrieve the county vote count.
+    # Retrieve the county vote count.
         votes1 = county_votes [county_name]
-    # 6c: Calculate the percentage of votes for the county.
+    # Calculate the percentage of votes for the county.
         county_vote_percentage = float(votes1) / float(total_votes) *100
         county_results = (
         f"{county_name}: {county_vote_percentage:.1f}% ({votes1:,})\n")
@@ -118,5 +118,7 @@ if (votes > winning_count) and (vote_percentage > winning_percentage):
         winning_candidate = candidate_name
         winning_percentage = vote_percentage
 ```
-After summarizing all the data from the election_results.csv, the results were printed to a .txt file for reference. 
+After summarizing all the data from the election_results.csv, the results were printed to a .txt file for reference.
+
+![image](https://user-images.githubusercontent.com/88912539/133583664-933c7c87-5d32-4840-8eac-1c8ba2225927.png)
 
