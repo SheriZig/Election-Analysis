@@ -122,3 +122,8 @@ After summarizing all the data from the election_results.csv, the results were p
 
 ![image](https://user-images.githubusercontent.com/88912539/133583664-933c7c87-5d32-4840-8eac-1c8ba2225927.png)
 
+## Election-Audit Summary
+
+After completion of the audit for the Colorado Election Commssion the code now exists to conduct a full audit of any election. Utilizing a .csv datasouce the code can be expanded to audit local elections as well as national elections. While the current data only contains three candidates in three counties, the same summary of data could be conducted on a file of any size from 100 records to a million records. 
+
+In addition to modifying the size of the audit, the scope could also be modified. Code could be added to provide a summary of how many votes each candidate received per county. The information provided could be useful for campaigns to determine where to campaign in future elections and how to allocate campaign resources. 
